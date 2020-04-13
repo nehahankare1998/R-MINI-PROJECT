@@ -1,0 +1,33 @@
+Scatterplot:
+
+Plot(df[.28])
+View (df)
+
+Barplot:
+
+Count <-table(v31)
+Count
+Barplot (v31)
+Table(v31)/501
+Percent <-table(v31)/501
+Percent
+Barplot (v31)
+Barplot (count)
+Barplot (percent)
+
+aMatplot:
+
+Plot(df[,28])
+view(df)
+Matplot (+(df),type="b",pch=15:19)
+Name <-colnames(df)
+legend("bottomleft", legend=name,col=(1:8),pch=15:19,bg=("white"),horiz=F)
+legend("bottomleft", legend=name,col=(1:8),pch=15:19,bg=("white"),horiz=F)
+
+Decisions Tree:
+
+library(rpart)
+library(rpart.plot)
+decisionTree_model <- rpart(Class ~ . , small.data, method = 'class')
+predicted_val <- predict(decisionTree_model, small.data, type = 'class')
+probability <- predict(decisionTree_model, small.data, type = 'prob')
